@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otinish ЖК</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Otinish ЖК</h1>
+
+    <div class="mode-switch">
+        <button id="mode-resident" class="active">Жилец</button>
+        <button id="mode-manager">Управляющая компания</button>
+    </div>
+
+    <div class="mode-switch">
+        <button id="tab-requests" class="active">Заявки</button>
+        <button id="tab-news">Новости</button>
+        <button id="tab-polls">Опросы</button>
+    </div>
+
+    <section id="requests-section">
+        <h2 id="form-title">Сообщить о проблеме</h2>
+        <form id="request-form">
+            <select id="category">
+                <option>Лифт</option>
+                <option>Вода</option>
+                <option>Свет</option>
+                <option>Двор</option>
+                <option>Другое</option>
+            </select>
+            <input type="text" id="apartment" placeholder="Номер квартиры" required>
+            <textarea id="description" placeholder="Опишите проблему" required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+
+        <h2>Заявки</h2>
+
+        <div class="filters">
+            <select id="filter-status">
+                <option value="all">Все статусы</option>
+                <option>Новая</option>
+                <option>В работе</option>
+                <option>Решена</option>
+            </select>
+            <select id="filter-category">
+                <option value="all">Все категории</option>
+                <option>Лифт</option>
+                <option>Вода</option>
+                <option>Свет</option>
+                <option>Двор</option>
+                <option>Другое</option>
+            </select>
+        </div>
+
+        <ul id="request-list"></ul>
+    </section>
+
+    <section id="news-section" style="display: none;">
+        <h2 id="news-form-title">Опубликовать новость</h2>
+        <form id="news-form">
+            <input type="text" id="news-title" placeholder="Заголовок" required>
+            <textarea id="news-text" placeholder="Текст объявления" required></textarea>
+            <button type="submit">Опубликовать</button>
+        </form>
+
+        <h2>Новости дома</h2>
+        <ul id="news-list"></ul>
+    </section>
+
+    <section id="polls-section" style="display: none;">
+        <h2 id="poll-form-title">Создать опрос</h2>
+        <form id="poll-form">
+            <input type="text" id="poll-question" placeholder="Вопрос" required>
+            <textarea id="poll-options" placeholder="Варианты ответа, каждый с новой строки (от 2 до 6)" required></textarea>
+            <button type="submit">Создать опрос</button>
+        </form>
+
+        <h2>Опросы жильцов</h2>
+        <ul id="poll-list"></ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

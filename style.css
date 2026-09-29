@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f4f8;
+    margin: 0;
+    padding: 16px;
+}
+
+h1 {
+    text-align: center;
+    color: #2b5cff;
+}
+
+form {
+    background: white;
+    padding: 16px;
+    border-radius: 12px;
+    max-width: 500px;
+    margin: 0 auto 24px;
+}
+
+select, input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 90px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #2b5cff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+ul {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    background: white;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+h2 {
+    max-width: 500px;
+    margin: 16px auto 12px;
+}
+form {
+    box-sizing: border-box;
+}
+
+.mode-switch {
+    display: flex;
+    gap: 8px;
+    max-width: 500px;
+    margin: 0 auto 16px;
+}
+
+    .mode-switch button {
+        width: auto;
+        flex: 1;
+        background: white;
+        color: #2b5cff;
+        border: 2px solid #2b5cff;
+        padding: 10px;
+    }
+
+        .mode-switch button.active {
+            background: #2b5cff;
+            color: white;
+        }
+
+.badge {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 14px;
+    color: white;
+}
+
+.new {
+    background: #e67e22;
+}
+
+.progress {
+    background: #2b5cff;
+}
+
+.done {
+    background: #27ae60;
+}
+
+li select {
+    margin: 8px 0 0;
+}
+.filters {
+    display: flex;
+    gap: 8px;
+    max-width: 500px;
+    margin: 0 auto 12px;
+}
+
+    .filters select {
+        flex: 1;
+        width: auto;
+        margin-bottom: 0;
+    }
+
+.date {
+    margin-top: 4px;
+    font-size: 13px;
+    color: #777;
+}
+.delete-btn {
+    width: auto;
+    margin-top: 8px;
+    padding: 8px 14px;
+    background: #e74c3c;
+    font-size: 14px;
+}
+
+    .delete-btn:hover {
+        background: #c0392b;
+    }
+.news-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+.option-btn {
+    background: white;
+    color: #2b5cff;
+    border: 2px solid #2b5cff;
+    margin-top: 8px;
+    padding: 10px;
+}
+
+    .option-btn:hover {
+        background: #eaf0ff;
+    }
+
+.result-row {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.bar-wrap {
+    background: #e6e9f0;
+    border-radius: 6px;
+    height: 12px;
+    margin-top: 4px;
+    overflow: hidden;
+}
+
+.bar {
+    background: #2b5cff;
+    height: 100%;
+}
